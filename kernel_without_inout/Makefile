@@ -10,7 +10,7 @@ GENCODE_FLAGS += -gencode arch=compute_$(HIGHEST_SM),code=compute_$(HIGHEST_SM) 
 
 
 #`pkg-config --list-all | grep cuda | grep -v 'cudart'| cut -f 1 -d ' '`
-CUDA = /usr/local/cuda-11.6
+CUDA = /usr/local/cuda
 
 CXXFLAGS = -O3 -std=c++11 -I./include
 CUDAFLAGS = -I$(CUDA)/include
